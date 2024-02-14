@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // GET ADD EMPLOYEE FORM AND EMPLOYEE TABLE FROM THE DOM
-    const form = document.getElementById('addForm'); // Adjusted to match HTML ID
-    const employeeTable = document.getElementById('employees'); // Adjusted to match HTML ID
+    const form = document.getElementById('addForm');
+    const employeeTable = document.getElementById('employees');
 
     // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
     let employeeCount = 0;
@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         // GET THE VALUES FROM THE TEXT BOXES
-        const employeeId = document.getElementById('id').value; // Adjusted to match HTML ID
-        const name = document.getElementById('name').value; // Matches HTML ID
-        const extension = document.getElementById('extension').value; // Adjusted to match HTML ID
-        const email = document.getElementById('email').value; // Matches HTML ID
-        const department = document.getElementById('department').value; // Matches HTML ID
+        const employeeId = document.getElementById('id').value;
+        const name = document.getElementById('name').value;
+        const extension = document.getElementById('extension').value;
+        const email = document.getElementById('email').value;
+        const department = document.getElementById('department').value;
 
         // INSERT A NEW ROW AT THE END OF THE EMPLOYEES TABLE
         const row = employeeTable.insertRow();
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
 
         // SET FOCUS BACK TO THE ID TEXT BOX
-        document.getElementById('id').focus(); // Adjusted to match HTML ID
+        document.getElementById('id').focus();
 
         // INCREMENT THE NUMBER OF EMPLOYEES IN THE TABLE
         employeeCount++;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function updateEmployeeCountDisplay() {
-        document.getElementById('empCount').textContent = employeeCount; // Adjusted to match HTML ID
+        document.getElementById('empCount').textContent = employeeCount;
     }
 });
 
